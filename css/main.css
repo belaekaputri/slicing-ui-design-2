@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #16161E;
+}
+
+.container {
+  width: 100%;
+  background-color: #29292C;
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 1100px;
+  height: 75px;
+  position: relative;
+}
+
+.container header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  /*menengakan navbar  syaratnya posisi absolut(relative ke induk) -> induknya harus "header relative" */
+  left: 50%;
+}
+
+.container header ul li {
+  list-style: none;
+}
+
+.container header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container header ul li a.active {
+  color: #FA4A55;
+}
+
+.container header button {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  width: 129px;
+  height: 46px;
+  background-color: #FA4A55;
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+}
+
+.deskripsi {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deskripsi .box-deskripsi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 800px;
+  height: 431px;
+  text-align: center;
+  padding: 15px;
+}
+
+.deskripsi .box-deskripsi p {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  padding: 10px;
+}
+
+.deskripsi .box-deskripsi p.one {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.deskripsi .box-deskripsi p.two {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.deskripsi .box-deskripsi p.three {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.deskripsi .box-deskripsi .btn {
+  margin-top: 15px;
+}
+
+.deskripsi .box-deskripsi .btn button {
+  margin-right: 10px;
+  background-color: #FA4A55;
+  width: 97px;
+  height: 46px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  border-radius: 10px;
+  border: 0;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+$utama:#16161E;
+$nav: #29292C;
+$navActive:#FA4A55;
+$fontColor:#fff;
+$box:#252529;
+@mixin flexbox($posisi,$bentuk){
+    display:flex;
+    justify-content: $posisi;
+    flex-direction: $bentuk;
+    align-items: center;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;  
+}
+body{
+    background-color:$utama;
+}
+.container{
+    width:100%;
+    background-color: $nav;
+    header{
+        @include flexbox(space-between,row);
+        margin: 0 auto;
+        width:1100px;
+        height:75px;
+        position: relative;
+       ul{
+           display:flex;
+           position: absolute;
+           transform:translateX(-50%); /*menengakan navbar  syaratnya posisi absolut(relative ke induk) -> induknya harus "header relative" */
+           left: 50%;
+           li{
+              list-style: none;
+              a{
+                  text-decoration:none;
+                  color:$fontColor;
+                  font-size:16px;
+                  padding:20px;
+                  font-family: 'Montserrat', sans-serif;
+              }
+              a.active{
+                color:$navActive;
+            }
+           }
+       }
+
+       button{
+        font-size:16px;
+        font-family: 'Montserrat', sans-serif;
+        width: 129px;
+        height: 46px;
+        background-color:$navActive;
+        color:$fontColor;
+        border-radius:10px;
+        border:0;
+       }
+    }
+}
+.deskripsi{
+     width:100%;
+    @include flexbox(center,column);
+    .box-deskripsi{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        width:800px;
+        height: 431px;
+       
+        text-align: center;
+        padding:15px;
+        p{
+            font-family: 'Inter', sans-serif;
+            color:$fontColor;
+            padding:10px;
+        }
+        p.one{
+            font-weight: 600;
+            font-size: 24px;
+        }
+        p.two{
+            font-weight: 700;
+            font-size: 48px;
+        }
+        p.three{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+           
+        }
+        .btn{
+            margin-top:15px;
+           button{
+            margin-right:10px;
+            
+            background-color: $navActive;
+            width:97px;
+            height:46px;
+            font-weight: 600;
+            font-size: 18px;
+            font-family: 'Inter', sans-serif;
+            border-radius:10px;
+            border:0;
+            color:$fontColor
+           
+        }
+      }
+}
+
+}
